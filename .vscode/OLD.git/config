@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "Pendulum"]
+	url = https://github.com/UbySoft/PENDULUM-METRONOMO.git
+	fetch = +refs/heads/*:refs/remotes/Pendulum/*
