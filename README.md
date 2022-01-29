@@ -49,6 +49,16 @@ Ho anche un forum musicale dove possiamo scambiare opinioni e idee.
 Forum Support:
 https://vivo-vivendo-musica.com/forum/index.php
 
+<p>
+	<a style="width: 80%; height: auto;" href="https://play.google.com/store/apps/details?id=com.ubyxsoft.pendulum"><img alt="Pendulum Metronomo free" title="Pendulum Metronomo free" style="  width: 80%;height: auto;display: inline-block;" src="https://vivo-vivendo-musica.com/assets/images/banner-download android-pendulum-free.jpg" /> </a>
+</p>
+<p>
+	<br /> Hi, my metronome (Pendulum Metronomo), finally available for android, click on the image or scan the qrcode to download it, I hope you like it! ... if you have ideas to improve it, or report errors etc., let's talk about it in the forum of vivo-vivendo-musica, if you like it, give it five stars in google pay. And if you want to contribute to this and my other software developments, you have the possibility to make even a very small donation <a href="https://www.patreon.com/ubyxsoft">on my Patreon </a>, thanks bye! <a href="https://vivo-vivendo-musica.com/ubaldo-formichetti/index.html">Click here for More info about me</a> <br /> 
+</p>
+<p>
+	<br /> 
+</p>
+
 
 <a href="https://vivo-vivendo-musica.com/ubaldo-formichetti/index.html"  style="width:200px; height:auto"  ><img src="https://vivo-vivendo-musica.com/ubaldo-formichetti/assets/img/2.jpg" style="width:300px; height:auto"   title="ubaldo formichetti" alt="me"></a>
 
