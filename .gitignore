@@ -4,3 +4,5 @@ KeyStore/psw.txt
 www/js/app.js
 platforms/android/app/src/main/assets/www/js/app.js
 build.json
+node_modules
+node_modules

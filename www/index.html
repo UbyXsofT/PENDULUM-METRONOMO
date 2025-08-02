@@ -23,9 +23,21 @@
 
     <div id="fade-wrapper">
       <label class="disable-select" id="lblConf">Click here for sound check <img src="./img/wave.png" style="width: 45px;
-          height: 29px;
-          margin-left: 10px;" /></label>
-      <img src="./img/logooff.png" style="width: 150px; opacity:0.5">
+        height: 29px;
+        margin-left: 10px;"></label>
+
+      <div>
+        <a class="btnLogoUbyXsofT1 d-inline-block" href="https://vivo-vivendo-musica.com/ubaldo-formichetti/index.html">
+          <img src="./img/logo-Uby.png"
+            style="background-color: #ffffff;
+            padding: 10px;
+            width: 100px;
+            border-radius: 10px;">
+            
+        </a>
+      </div>
+
+  
     </div>
 
     <div class="BLOCCO-HEADER disable-select">
@@ -33,9 +45,10 @@
         <div class="row">
           <div class="col-md-12">
             <a id="btnLogoPendulum" class="d-inline-block">
-              <img src="./img/logo.png" style="width: 60px;height: 60px;" />
+              <img src="./img/pendulum.png" style="width: 150px;height: 40px;" />
+              <!-- <img src="./img/logo.png" style="width: 60px;height: 60px;" />
               <img src="./img/endulum.png"
-                style="width: 90px;height: 15px;margin: 0px;margin-top: 19px;margin-left: -12px;" />
+                style="width: 90px;height: 15px;margin: 0px;margin-top: 19px;margin-left: -12px;" /> -->
             </a>
 
             <a id="btnOpzioni" class="justify-content-md-end align-items-md-center"><img src="./img/opzioni.png"
@@ -124,10 +137,8 @@
         <div class='tempoInfoDesc'>Moderato</div>
 
         <div>
-          <a id="btnLogoUbyXsofT" class="d-inline-block">
-            <img id='ubylogo' src="./img/logo-Uby.png" style="height: 40px;
-            padding-top: 5px;
-            margin-top: 10px;" />
+          <a class="btnLogoUbyXsofT d-inline-block">
+            <img id='ubylogo' src="./img/logo-Uby.png" style="height: 40px;" />
           </a>
         </div>
 
@@ -252,7 +263,10 @@
 
         <div class="uby-txtTempo">
           <!-- <input type="number" min="20" max="400" id="mytxtTempo" /> -->
+          <div style="width:80%" class='tempoInfoDesc'>Moderato</div>
+
           <span id="range-mytxtTempo">150</span>
+          <br>
           <input type="range" min="20" max="400" value="100" class="slider" id="mytxtTempo">
           <div id="mytxtBpm">BPM</div>
         </div>
@@ -318,11 +332,14 @@
 
     <!-- Scripts -->
     <script src="cordova.js"></script>
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-2.2.4.min.js"></script>
     <script src="./js/Tone.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/app-min.js"></script>
     <script src="./js/jquery.irspinner.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/admob-simple.js"></script>
+    <script src="./js/app-min.js"></script>
+    
+
 
   </body>
 

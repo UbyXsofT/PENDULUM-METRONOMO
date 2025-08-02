@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ubyxsoft.pendulum" version="1.0.2" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>PENDULUM - METRONOMO</name>
+<widget id="com.ubyxsoft.pendulum" version="1.0.4" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Metronome - Pendulum</name>
     <description>
         Il metronomo è nato come uno strumento di misura della pulsazione ritmica, 
         pendulum è nato per renderlo facile, divertente e interessante.
@@ -9,60 +9,66 @@
        UbyXsofT
     </author>
     <content src="index.html" />
-    
-        <allow-navigation href="*" />
-        <allow-navigation href="*://*/*" />
-        <allow-navigation href="file:///*/*" />
-        <allow-navigation href="http://*/*" />
-        <allow-navigation href="https://*/*" />
-        <allow-navigation href="data:*" />
-
-        <allow-intent href="*" />
-        <allow-intent href="http://*/*" />
-        <allow-intent href="https://*/*" />
-        <allow-intent href="tel:*" />
-        <allow-intent href="sms:*" />
-        <allow-intent href="mailto:*" />
-        <allow-intent href="geo:*" />
-
-        <access origin="*" />
-        <access origin="*://*/*" />
-        <access origin="file:///*" />
-        <access origin="cdvfile://*" />
-        <access origin="content:///*" />
-
-    <preference name="android-targetSdkVersion" value= "30"/>
+    <allow-navigation href="*" />
+    <allow-navigation href="*://*/*" />
+    <allow-navigation href="file:///*/*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="data:*" />
+    <allow-intent href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <access origin="*" />
+    <access origin="*://*/*" />
+    <access origin="file:///*" />
+    <access origin="cdvfile://*" />
+    <access origin="content:///*" />
     <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,root" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="Fullscreen" value="true" />
-    <preference name="BackgroundColor" value="ffffff" />
+    <preference name="BackgroundColor" value="#ff8a00" />
     <preference name="HideKeyboardFormAccessoryBar" value="true" />
     <preference name="Orientation" value="portrait" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    
     <platform name="android">
-        <allow-intent href="market:*" />
-        <preference name="SplashMaintainAspectRatio" value="true"/>
-        <preference name="SplashShowOnlyFirstTime" value="true"/>
-        <icon density="ldpi" src="www/res/icon/android/ldpi.png"/>
-        <icon density="mdpi" src="www/res/icon/android/mdpi.png"/>
-        <icon density="hdpi" src="www/res/icon/android/hdpi.png"/>
-        <icon density="xhdpi" src="www/res/icon/android/xhdpi.png"/>
-        <icon density="xxhdpi" src="www/res/icon/android/xxhdpi.png"/>
-        <icon density="xxxhdpi" src="www/res/icon/android/xxxhdpi.png"/>
-        <!--  Portrait  res\drawable-port-ldpi\screen.png -->
-        <splash density="port-ldpi" src="www/res/screen/android/drawable-port-ldpi/screen.png"/>
-        <splash density="port-mdpi" src="www/res/screen/android/drawable-port-mdpi/screen.png"/>
-        <splash density="port-hdpi" src="www/res/screen/android/drawable-port-hdpi/screen.png"/>
-        <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi/screen.png"/>
-        <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi/screen.png"/>
-        <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi/screen.png"/>
-        <!-- Lint error default screen -->
-        <splash density="ldpi" src="www/res/screen/android/drawable-port-ldpi/screen.png"/>
-        <splash density="mdpi" src="www/res/screen/android/drawable-port-mdpi/screen.png"/>
-        <splash density="hdpi" src="www/res/screen/android/drawable-port-hdpi/screen.png"/>
-        <splash density="xhdpi" src="www/res/screen/android/drawable-port-xhdpi/screen.png"/>
-        <splash density="xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi/screen.png"/>
-        <splash density="xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi/screen.png"/>
-
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" />
+        </edit-config>
+        <resource-file src="www/res/icon/android/mipmap-ldpi/ic_launcher.png" target="app/src/main/res/mipmap-ldpi/ic_launcher.png" />
+        <resource-file src="www/res/icon/android/mipmap-ldpi-v26/ic_launcher_background.png" target="app/src/main/res/mipmap-ldpi-v26/ic_launcher_background.png" />
+        <resource-file src="www/res/icon/android/mipmap-ldpi-v26/ic_launcher_foreground.png" target="app/src/main/res/mipmap-ldpi-v26/ic_launcher_foreground.png" />
+        <resource-file src="www/res/icon/android/mipmap-hdpi/ic_launcher.png" target="app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+        <resource-file src="www/res/icon/android/mipmap-hdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-hdpi/ic_launcher_round.png" />
+        <resource-file src="www/res/icon/android/mipmap-hdpi-v26/ic_launcher_background.png" target="app/src/main/res/mipmap-hdpi-v26/ic_launcher_background.png" />
+        <resource-file src="www/res/icon/android/mipmap-hdpi-v26/ic_launcher_foreground.png" target="app/src/main/res/mipmap-hdpi-v26/ic_launcher_foreground.png" />
+        <resource-file src="www/res/icon/android/mipmap-mdpi/ic_launcher.png" target="app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+        <resource-file src="www/res/icon/android/mipmap-mdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-mdpi/ic_launcher_round.png" />
+        <resource-file src="www/res/icon/android/mipmap-mdpi-v26/ic_launcher_background.png" target="app/src/main/res/mipmap-mdpi-v26/ic_launcher_background.png" />
+        <resource-file src="www/res/icon/android/mipmap-mdpi-v26/ic_launcher_foreground.png" target="app/src/main/res/mipmap-mdpi-v26/ic_launcher_foreground.png" />
+        <resource-file src="www/res/icon/android/mipmap-xhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+        <resource-file src="www/res/icon/android/mipmap-xhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" />
+        <resource-file src="www/res/icon/android/mipmap-xhdpi-v26/ic_launcher_background.png" target="app/src/main/res/mipmap-xhdpi-v26/ic_launcher_background.png" />
+        <resource-file src="www/res/icon/android/mipmap-xhdpi-v26/ic_launcher_foreground.png" target="app/src/main/res/mipmap-xhdpi-v26/ic_launcher_foreground.png" />
+        <resource-file src="www/res/icon/android/mipmap-xxhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+        <resource-file src="www/res/icon/android/mipmap-xxhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" />
+        <resource-file src="www/res/icon/android/mipmap-xxhdpi-v26/ic_launcher_background.png" target="app/src/main/res/mipmap-xxhdpi-v26/ic_launcher_background.png" />
+        <resource-file src="www/res/icon/android/mipmap-xxhdpi-v26/ic_launcher_foreground.png" target="app/src/main/res/mipmap-xxhdpi-v26/ic_launcher_foreground.png" />
+        <resource-file src="www/res/icon/android/mipmap-xxxhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+        <resource-file src="www/res/icon/android/mipmap-xxxhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
+        <resource-file src="www/res/icon/android/mipmap-xxxhdpi-v26/ic_launcher_background.png" target="app/src/main/res/mipmap-xxxhdpi-v26/ic_launcher_background.png" />
+        <resource-file src="www/res/icon/android/mipmap-xxxhdpi-v26/ic_launcher_foreground.png" target="app/src/main/res/mipmap-xxxhdpi-v26/ic_launcher_foreground.png" />
+        <AndroidWindowSplashScreenAnimatedIcon density="port-ldpi" src="www/res/screen/android/splash-port-ldpi.png" target="res/splash-port-ldpi.png" />
+        <AndroidWindowSplashScreenAnimatedIcon density="port-mdpi" src="www/res/screen/android/splash-port-mdpi.png" target="res/splash-port-mdpi.png" />
+        <AndroidWindowSplashScreenAnimatedIcon density="port-hdpi" src="www/res/screen/android/splash-port-hdpi.png" target="res/splash-port-hdpi.png" />
+        <AndroidWindowSplashScreenAnimatedIcon density="port-xhdpi" src="www/res/screen/android/splash-port-xhdpi.png" target="res/splash-port-xhdpi.png" />
+        <AndroidWindowSplashScreenAnimatedIcon density="port-xxhdpi" src="www/res/screen/android/splash-port-xxhdpi.png" target="res/splash-port-xxhdpi.png" />
+        <AndroidWindowSplashScreenAnimatedIcon density="port-xxxhdpi" src="www/res/screen/android/splash-port-xxxhdpi.png" target="res/splash-port-xxxhdpi.png" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
