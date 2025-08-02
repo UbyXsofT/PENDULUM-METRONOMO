@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ubyxsoft.pendulum" version="1.0.4" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ubyxsoft.pendulum" version="1.0.5" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Metronome - Pendulum</name>
     <description>
         Il metronomo è nato come uno strumento di misura della pulsazione ritmica, 
         pendulum è nato per renderlo facile, divertente e interessante.
     </description>
-    <author email="info@vivo-vivendo-musica.com" href="https://vivo-vivendo-musica.com">
+    <author email="info@ubyxsoft.com" href="https://ubyxsoft.com">
        UbyXsofT
     </author>
     <content src="index.html" />
